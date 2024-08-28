@@ -1,0 +1,52 @@
+version: '3.1'
+
+services:
+  mongo:
+    image: mongo
+    restart: always
+    ports:
+      - 27017:27017
+
+  retriever16:
+    build: ./retriever
+    ports:
+      - 8081:8080
+    depends_on:
+      - mongo
+    
+  csv-reader-test89:
+    build: ./csv-reader-spring
+    depends_on:
+      - mongo
+    volumes: 
+      - csv-data:/data/
+      
+  python-csv-writer:
+    build: ./ProjectPythonDev
+    volumes: 
+      - csv-data:/app/data/
+  
+  front-end:
+    # image: frontend-react
+    build: ./front-end
+    ports:
+      - 3000:3000
+
+  sonarqube:
+    image: sonarqube:8-community
+    container_name: sonarqube
+    environment:
+      - SONAR_ES_BOOTSTRAP_CHECKS_DISABLE=true
+    ports:
+      - "9000:9000"
+
+volumes:
+  SonarQube_data:
+  SonarQube_extensions:
+  SonarQube_logs:
+  postgresql:
+  postgresql_data:
+  csv-data:
+
+networks:
+  your_network:

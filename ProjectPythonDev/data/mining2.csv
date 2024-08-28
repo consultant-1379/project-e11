@@ -1,0 +1,3 @@
+repo_name,commit_date,num_inserts,num_deletes,num_files,change_set,code_churn,hunks_count,contributor_count,minor_contributors,contributor_names
+eric-oss-app-mgr-app-engineering,2023-08-16 11:04:13+00:00,1,1,1,1,0,1.0,1,1,Jenkins User
+eric-oss-app-mgr-app-engineering,2023-08-16 11:04:17+00:00,1,1,1,1,0,1.0,1,1,Jenkins User

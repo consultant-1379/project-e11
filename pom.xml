@@ -1,0 +1,16 @@
+<project>
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.e11</groupId>
+    <artifactId>gitMining</artifactId>
+    <version>0.0.1</version>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>retriever</module>
+        <module>csv-reader-spring</module>
+    </modules>
+
+    <build>
+        
+    </build>
+</project>

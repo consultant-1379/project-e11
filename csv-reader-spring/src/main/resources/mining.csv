@@ -1,0 +1,3 @@
+repo_name,commit_date,num_inserts,num_deletes,num_files,change_set,code_churn,hunks_count,contributor_count,minor_contributors,contributor_names
+the-first-repo,2021-09-13 21:31:46+05:30,110,0,7,7,110,7,1,0,xpradev
+the-first-repo,2021-08-03 18:03:34+02:00,0,0,0,0,0,0,0,0,

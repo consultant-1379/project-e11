@@ -1,0 +1,9 @@
+filename,lineschanged
+gradle.properties,4
+src\js\use_cases\Content_validation.js,64
+src\js\main.js,21
+src\js\use_cases\OutputTopic_3GPP_Topic_validation.js,46
+src\js\use_cases\OutputTopic_Validation.js,48
+src\js\use_cases\Ran-parser_internal.js,2
+src\js\use_cases\config.js,5
+src\resources\config\default.options.json,8
